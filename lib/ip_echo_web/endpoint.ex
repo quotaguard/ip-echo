@@ -42,5 +42,6 @@ defmodule IpEchoWeb.Endpoint do
   plug Plug.MethodOverride
   plug Plug.Head
   plug Plug.Session, @session_options
+  plug RemoteIp
   plug IpEchoWeb.Router
 end
